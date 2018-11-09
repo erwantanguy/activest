@@ -1,0 +1,902 @@
+html{
+	overflow-x: hidden;
+}
+#annuaireform{
+	background-color:#e8f5fb; 
+	min-height:400px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+
+#annuaireform h1{
+	text-transform:uppercase;
+	color:#000;
+	text-align:center;
+	margin:0;
+    padding-bottom:50px;
+}
+.annuairesearch{
+	width:60%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	margin:0 auto;
+}
+form input,form select{
+	/*padding:10px 50px;*/
+        padding: 5px 10px;
+	font-size:2em;
+	border:none;
+	display:block;
+	width:48%;
+	margin:20px 0;
+}
+
+form input[type=submit]{
+	text-transform:capitalize;
+	background:#1ea4dc;
+	color:#fff;
+	height:auto;
+	display:block;
+	width:100%;
+	font-weight:700;
+}
+form input[type=submit]:hover{
+	background:#0a8abf;
+}
+
+.select-wrapper{
+	color:#1ea4dc;
+	cursor:pointer; 
+}
+#fiche{
+	display:block;
+	padding:40px 15%;
+	background:#fff;
+}
+.fiche{
+	background:#f1f1f1;
+	display:flex;
+	justify-content:space-between;
+	padding:10px 30px;
+}
+.fiche div{
+	display:flex;
+}
+.nomentreprise{
+	font-size:26px;
+	font-weight:bold;
+}
+
+.topfiche{
+	background:#fff;
+	padding:0 30px 0 30px;
+	border-bottom:2px solid #e3e3e3;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.topfiche div{
+	padding:15px 0;
+}
+
+.topfiche a:first-child{
+	display:flex;
+	align-items:center;
+}
+
+.linkfiche{
+	font-size:1.5em;
+	color:#1ea4dc;
+	text-decoration:underline;
+	font-weight:600;
+}
+.infos_contact{
+	resize:none;
+}
+.act_entreprise{
+	color:#000;
+	font-size:1.5em;
+}
+
+.adresse_entreprise{
+	background:#f1f1f1;
+	padding:10px 0 0 30px;
+	font-weight:bold;
+}
+
+.allcontacts{
+	margin-bottom:10px;
+	border:2px solid #e3e3e3;
+}
+.prenom,.nom{
+	font-weight:bold;
+}
+.telephone, .prenom, .nom, .adresse_entreprise span, .email, .contact_entreprise{
+	font-size:18px;
+}
+.telephone, .email, .prenom, .adresse_entreprise span{
+	display:flex;
+	align-items:center;
+}
+
+#fiche_ind h2{
+	text-align:center;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+        font-size: 3.5em;
+}
+
+.contact_entreprise{
+	display:flex;
+	justify-content:space-around;
+}
+
+.fa-chevron-circle-up{
+	color:#1ea4dc;
+	font-size:20px;
+	position:fixed;
+	bottom:40px;
+	right:10%;
+}
+
+/****************Formulaire de la page de connexion******************************/
+
+#loginform{
+	margin-top: 90px;
+	margin-bottom: 90px;
+	padding: 0 15vw;
+}
+
+#loginform #rememberme{
+	width: 10%;
+	margin: 20px 0;
+}
+
+#loginform label{
+	display: block;
+	width: 50%;
+	margin: 10px auto;
+	font-size: 1.5em;
+}
+#loginform .login-remember label{
+	display: flex;
+	align-items: center;
+	
+}
+#user_pass,#user_login{
+	border: 1px solid #bbe3f4;
+}
+#wp-submit,#user_pass,#user_login{
+	width: 50%;
+	margin:0 auto;
+}
+/****************Formulaire de contact******************************/
+.formcontact{
+	margin-bottom:30px !important;
+}
+/****************Formulaire de la page de confirmation d'envoi (contact)******************************/
+#envoi_confirme{
+	min-height:580px;
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+}
+#envoi_confirme p,#envoi_confirme a{
+	font-size:3em;
+}
+#envoi_confirme a{
+	text-decoration:underline;
+	color:#1ea4dc;
+}
+/************************************ANNUAIRE PLUGIN************************************/
+.annuaire-professionnel main form,.wpbdp-view-show_category main form{
+	height: 240px;
+        /*height: 355px;*/
+	/*width: 100vw;*/
+        width: 100%;
+	/*display: flex;*/
+	position: relative;
+	top: 60px;
+}
+.annuaire-professionnel .wpbdp-main-box-medium .submit-btn, .annuaire-professionnel .wpbdp-main-box-large .submit-btn{
+    float: none;
+    position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.annuaire-professionnel .wpbdp-main-box-medium .submit-btn input, .annuaire-professionnel .wpbdp-main-box-large .submit-btn input{
+    margin-bottom: 100px;
+}
+.annuaire-professionnel .footer,.wpbdp-view-show_category .footer{
+	margin-top: 250px;
+}
+.annuaire-professionnel #wpbdp-categories .wpbdp-categories{
+	display: none;
+}
+.annuaire-professionnel main section,.wpbdp-view-show_category main section{
+    position: relative;
+}
+.annuaire-professionnel main section article,.wpbdp-view-show_category main section article{
+
+}
+.annuaire-professionnel main h1,.wpbdp-view-show_category main h1{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	/*top: 150px;*/
+	z-index: 100;
+	font-size: 1.2em;
+}
+.annuaire-professionnel .wpbdp-main-box-large .submit-btn{
+    width: auto;
+}
+.annuaire-professionnel main .wpbdp-main-box,.wpbdp-view-show_category main .wpbdp-main-box{
+	margin:0;
+	background-color: rgba(30, 164, 220, 0.1);
+}
+.wpbdp-main-box-large .search-fields{
+	width: 550px !important;
+}
+.wpbdp-main-box .box-col input{
+	font-size: 1.3em;
+	padding: 5px 10px;
+}
+.annuaire-professionnel .main-fields .box-col .keywords-field,.wpbdp-view-show_category .main-fields .box-col .keywords-field{
+	width: 550px;
+	height: 50px;
+	margin: 0;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.annuaire-professionnel .main-fields .bouton_recherche,.wpbdp-view-show_category .main-fields .bouton_recherche{
+	padding: 0;
+	height: 50px;
+	width: 150px;
+	border-radius: 0 2px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: calc(45% + 277px);
+
+}
+.wpbdp-main-box-large .search-fields{
+	padding: 0 !important;
+}
+.annuaire-professionnel .wpbdp-main-links-container .wpbdp-main-links .button,.wpbdp-view-show_category .wpbdp-main-links-container .wpbdp-main-links .button{
+	color: #1ea4dc; 
+	background-color: transparent;
+	border: none;
+	font-weight: 800;
+	text-decoration: underline;
+	font-size: 1.2em;
+	position: absolute;
+	/*top: 320px;*/
+        top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.annuaire-professionnel.wpbdp-view-all_listings .wpbdp-main-links-container .wpbdp-main-links .button{
+    top: 7%;
+}
+/*page-template-default page page-id-660 logged-in admin-bar pmpro-body-has-access annuaire-professionnel wpbdp-with-button-styles business-directory wpbdp-view-all_listings wpbdp-wp-theme-html5blank wpbdp-theme-default customize-support*/
+
+/*page-template-default page page-id-660 logged-in admin-bar pmpro-body-has-access annuaire-professionnel wpbdp-with-button-styles business-directory wpbdp-view-main wpbdp-wp-theme-html5blank wpbdp-theme-default customize-support*/
+
+
+
+.wpbdp-view-show_category h2.category-name{
+	text-align: center;
+}
+.wpbdp-main-links .button:first-child,.wpbdp-main-links .button:last-child{
+	display: none;
+}
+/**************PAGE RESULTAT PLUGIN ANNUAIRE **********************************/
+.wpbdp-listing-excerpt{
+	width: 80vw;
+	height: 270px;
+	max-width: 1000px;
+	background-color: rgba(241, 241, 241, 1);
+	border-radius: 10px;
+	margin: 5px auto;
+	position: relative;
+	padding-bottom: 30px;
+}
+.wpbdp-view-search .listings{
+	position: relative;
+}
+.wpbdp-view-search  h2.title,.wpbdp-view-search h1{
+	display: none;
+}
+.wpbdp-view-search  h3{
+	z-index: -10;
+	width: 100%;
+	text-align: center;
+}
+.wpbdp-view-all_listings,.wpbdp-view-search,.wpbdp-view-show_category{
+	overflow-x: hidden;
+}
+.wpbdp-view-all_listings .wpbdp-field-ville label,.wpbdp-view-search .wpbdp-field-ville label,.wpbdp-view-show_category.wpbdp-field-ville label,
+.wpbdp-view-all_listings .wpbdp-field-nom_contact_2,.wpbdp-view-search .wpbdp-field-nom_contact_2,.wpbdp-view-show_category .wpbdp-field-nom_contact_2,
+.wpbdp-view-all_listings .wpbdp-field-nom_contact_entreprise,.wpbdp-view-search .wpbdp-field-nom_contact_entreprise,.wpbdp-view-show_category .wpbdp-field-nom_contact_entreprise,
+.wpbdp-view-all_listings .wpbdp-field-numero_de_telephone_fax,.wpbdp-view-search .wpbdp-field-numero_de_telephone_fax,.wpbdp-view-show_category .wpbdp-field-numero_de_telephone_fax,
+.wpbdp-view-all_listings .wpbdp-field-numero_de_telephone_portable,.wpbdp-view-search .wpbdp-field-numero_de_telephone_portable,.wpbdp-view-show_category .wpbdp-field-numero_de_telephone_portable,
+.wpbdp-view-all_listings .wpbdp-field-code_ape,.wpbdp-view-search .wpbdp-field-code_ape,.wpbdp-view-show_category .wpbdp-field-code_ape,
+.wpbdp-view-all_listings .address-info br,.wpbdp-view-search .address-info br,.wpbdp-view-show_category .address-info br,
+.wpbdp-view-all_listings .wpbdp-field-domaine_dactivite label,.wpbdp-view-search .wpbdp-field-domaine_dactivite label,.wpbdp-view-show_category .wpbdp-field-domaine_dactivite label,
+.wpbdp-view-all_listings .edit-listing,.wpbdp-view-search .edit-listing,.wpbdp-view-show_category .edit-listing,
+.wpbdp-view-all_listings .wpbdp-field-mail_interlocuteur_,.wpbdp-view-search .wpbdp-field-mail_interlocuteur_,.wpbdp-view-show_category .wpbdp-field-mail_interlocuteur_,
+.wpbdp-view-all_listings .wpbdp-field-nom_interlocuteur_,.wpbdp-view-search .wpbdp-field-nom_interlocuteur_,.wpbdp-view-show_category .wpbdp-field-nom_interlocuteur_,
+.wpbdp-view-all_listings .wpbdp-field-adherent_,.wpbdp-view-search .wpbdp-field-adherent_,.wpbdp-view-show_category .wpbdp-field-adherent_,
+.wpbdp-view-all_listings .wpbdp-field-telephone_contact,.wpbdp-view-search .wpbdp-field-telephone_contact,.wpbdp-view-show_category .wpbdp-field-telephone_contact,
+.wpbdp-view-all_listings .wpbdp-field-mail_contact_2,.wpbdp-view-search .wpbdp-field-mail_contact_2,.wpbdp-view-show_category .wpbdp-field-mail_contact_2,
+.wpbdp-view-all_listings .wpbdp-field-forme_juridique_,.wpbdp-view-search .wpbdp-field-forme_juridique_,.wpbdp-view-show_category .wpbdp-field-forme_juridique_,
+.wpbdp-view-all_listings .wpbdp-bar,.wpbdp-view-search .wpbdp-bar,.wpbdp-view-show_category .wpbdp-bar,
+.wpbdp-view-all_listings .wpbdp-field-e-mail_entreprise,.wpbdp-view-search .wpbdp-field-e-mail_entreprise,.wpbdp-view-show_category .wpbdp-field-e-mail_entreprise,
+.wpbdp-view-all_listings .delete-listing,.wpbdp-view-show_category .delete-listing,.wpbdp-view-search  .delete-listing{
+	display: none;
+}
+.wpbdp-view-all_listings .wpbdp-field-ville,.wpbdp-view-search .wpbdp-field-ville,.wpbdp-view-show_category .wpbdp-field-ville{
+	position: absolute;
+	top: 47px;
+    right: -360px;
+}
+.address-info label{
+	padding-left: 25px;
+    background: url(img/picto_adress.png) no-repeat;
+	background-position: 0 0;
+}
+.wpbdp-field-nom_du_dirigeant label{
+	padding-left: 25px;
+    background: url(img/picto_user.png) no-repeat;
+	background-position: 0 0;
+}
+.wpbdp-field-site_web_de_lentreprise label{
+	padding-left: 25px;
+    background: url(img/picto_email.png) no-repeat;
+	background-position: 0 0;
+}
+.wpbdp-field-numero_de_telephone_de_lentreprise label{
+	padding-left: 25px;
+    background: url(img/picto_phone.png) no-repeat;
+	background-position: 0 4px;
+}
+.listings .listing-thumbnail img {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 42px;
+    border-radius: 10px;
+}
+.wpbdp-listing-single .listing-thumbnail img {
+	position: absolute;
+	right: 10vw;
+	width: 200px;
+	height: 200px;
+}
+.wpbdp-listings-list .wpbdp-listing-excerpt .listing-title,.wpbdp-view-show_listing .wpbdp-listing .listing-title{
+	border: none ;
+}
+.wpbdp-view-show_listing .wpbdp-listing .listing-details .wpbdp-field-adresse{
+	display: flex;
+}
+.wpbdp-view-show_listing .wpbdp-listing .listing-details .field-value .value{
+	margin-left: 5px;
+}
+.wpbdp-listings-list .wpbdp-listing-excerpt .listing-details label{
+	margin:0;
+}
+.wpbdp-listings-list .wpbdp-listing-excerpt .listing-details{
+	position: absolute;
+	left: 102px;
+	top: 90px;
+}
+.listings .wpbdp-listing .listing-title a{
+	font-family: 'Raleway';
+	font-size: 1.2em;
+	font-weight: 800;
+	color: rgba(58, 64, 60, 1);
+	position: absolute;
+	top: 55px;
+	left: 260px;
+}
+.wpbdp-listings-list .wpbdp-listing-excerpt .listing-details .wpbdp-field-display{
+	margin: 3px 0;
+}
+.listings .wpbdp-listing .address-info label{
+	display: inline;
+}
+.listings .wpbdp-listing .wpbdp-field-domaine_dactivite a:before{
+	content: '(';
+}
+.listings .wpbdp-listing .wpbdp-field-domaine_dactivite a:after{
+	content: ')';
+}
+ .listings .wpbdp-listing .wpbdp-field-domaine_dactivite a{
+ 	max-width: 480px;
+ 	display: block;
+	position: absolute;
+	top: -35px;
+	right: -300px;
+	font-family: 'Raleway';
+	font-size: 1.1em;
+	font-weight: 500;
+	color: rgba(58, 64, 60, 1) !important;
+}
+.view-listing{
+	position: absolute;
+	right: 56px;
+    top: 166px;
+	font-family: 'Raleway';
+	font-size: 17px;
+	font-weight: 800;
+	color: rgba(30, 164, 220, 1);
+	text-decoration: underline;
+}
+.listings div:first-child{
+	margin-top: 50px;
+}
+ .wpbdp_listing-template-default .wpbdp-listing .listing-title h2{
+	color: #1ea4dc;
+    width: 400px;
+    text-align: center;
+    padding: 70px 0;
+    background: #fff;
+    margin: 30px auto;
+    border-radius: 3px;
+    box-shadow: 1px 2px 1px rgba(0,0,0, 0.1);
+ }
+ .listing-actions{
+ 	position: relative;
+ }
+.back-to-dir{
+	margin-right: -50px;
+	height: 55px;
+	width: 170px;
+	font-size: 1.2em;
+	color: #fff;
+	background-color: #1ea4dc;
+	position: absolute;
+	right: 40px;
+	bottom: -350px;
+}
+.wpbdp-listing-contact-form{
+  	width: 40vw;
+  	position: relative;
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+.wpbdp-listing-contact-form h3{
+  	text-align: center;
+}
+.wpbdp-listing-contact-form input,.wpbdp-listing-contact-form textarea{
+  	border: 1px solid #414141;
+}
+.single-wpbdp_listing .wpbdp-listing-contact-form  input,.single-wpbdp_listing .wpbdp-listing-contact-form  textarea{
+	width: 100% !important;
+}
+.wpbdp-listing-contact-form textarea{
+  	resize: none;
+}
+.single-wpbdp_listing .comments{
+	display: none;
+}
+.wpbdp-listing-single .listing-actions{
+	display: none;
+}
+.listings .wpbdp-pagination{
+	margin: 40px 18.5vw;
+}
+.listings .wpbdp-pagination span{
+	padding: 20px 40px;
+	min-width: 150px;
+	border-radius: 2px;
+}
+.listings .wpbdp-pagination span a{
+	color: #1ea4dc;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.listings .wpbdp-pagination span.prev{
+	position: absolute;
+}
+.post-edit-link{
+	display: none !important;
+}
+.wpbdp-view-show_listing .wpbdp-listing .listing-details .field-value{
+	display: flex;
+}
+/**************RESPONSIVE FORMULAIRES **********************************/
+@media only screen and (max-width:768px) {
+	form input, form select {
+		padding:10px 15px;
+	}
+	#loginform{
+		padding: 0 10vw;
+	}
+	#wp-submit, #user_pass, #user_login{
+		width: 70%;
+	}
+	.nomentreprise{
+		font-size:22px;
+	}
+	
+	#fiche{
+		padding:40px 10%;
+	}
+	
+	.fiche{
+		flex-wrap:wrap;
+	}
+	
+	.telephone, .prenom, .nom, .adresse_entreprise span, .email, .contact_entreprise{
+		font-size:16px;
+	}
+	
+	.annuairesearch{
+		width:75%;
+	}
+	.annuaire-professionnel main h1{
+		/*top: 70px;*/
+	}
+
+	.annuaire-professionnel main .wpbdp-main-box{
+		margin:0;
+		background-color: rgba(30, 164, 220, 0.1);
+	}
+	.wpbdp-main-box-large .search-fields{
+		width: 440px !important;
+	}
+	.annuaire-professionnel .main-fields .box-col .keywords-field{
+		width: 440px;
+		height: 42px;
+		top: 50%;
+		left: 40%;
+		font-size: 1.2em;
+	}
+	.annuaire-professionnel .main-fields .bouton_recherche{
+		height: 42px;
+		width: 120px;
+		left: calc(40% + 222px);
+		font-size: 1.1em;
+	}
+	.annuaire-professionnel .wpbdp-main-links-container .wpbdp-main-links .button{
+		top: 250px;
+	}
+	.wpbdp-listing-excerpt{
+	width: 90vw;
+	height: 325px;
+	}
+	.wpbdp-field-ville{
+		left: 310px;
+	}
+	.listing-thumbnail img {
+	    margin-left: 20px;
+	}
+	.wpbdp-listings-list .wpbdp-listing-excerpt .listing-details{
+		left: 40px;
+		top: 90px;
+	}
+	.listings .wpbdp-listing .listing-title a{
+		left: 198px;
+	}
+	 .listings .wpbdp-listing .wpbdp-field-domaine_dactivite a{
+		display: none;
+	}
+	.view-listing{
+		right: 56px;
+	    top: 194px;
+	}
+	.back-to-dir{
+	height: 40px;
+	width: 140px;
+	font-size: 1em;
+	right: 20px;
+	bottom: -360px;
+	}
+	.wpbdp-listing-contact-form{
+  	width: 60vw;
+  	}
+	.listings .wpbdp-pagination {
+    margin: 40px 5vw;
+	}
+	.wpbdp-view-all_listings .wpbdp-field-ville,.wpbdp-view-search .wpbdp-field-ville,.wpbdp-view-show_category .wpbdp-field-ville{
+	top: 70px;
+    left: 84px;
+	}
+	.listings .listing-thumbnail img {
+    top: 56%;
+    margin-left: 15px;
+	}
+	.listings div:first-child {
+    margin-bottom: 30px;
+	}
+	#nav-resp ul li .lien_annuaire{
+		display: none;
+	}
+	#nav-resp ul li .lien_annuairevisible{
+		display: block;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	#loginform{
+		padding: 0 5vw;
+	}
+	#wp-submit, #user_pass, #user_login{
+		width: 80%;
+	}
+	#formulaire_inscription{
+		width: 100%;
+	}
+	#annuaireform {
+		min-height:500px;
+	}
+	
+	.topfiche{
+		flex-wrap:wrap;
+		padding:15px 20px;
+	}
+	
+	.topfiche > a{
+		margin:auto;
+	}
+	
+	.topfiche div{
+		padding:0;
+	}
+	
+	.adresse_entreprise{
+		padding:10px 0 0 20px;
+	}
+	
+	.fiche{
+		padding:10px 20px;
+	}
+	#annuaireform input,#annuaireform select{
+		width: 100%;
+	}
+	#annuaireform input[type=text] {
+		font-size: 1.2em;
+	}
+	.annuaire-professionnel main h1{
+		/*top: 50px;*/
+		font-size: 1.3em;
+		padding: 0 25px;
+	}
+	.wpbdp-main-box-large .search-fields{
+		width: 400px !important;
+	}
+	.annuaire-professionnel .main-fields .box-col .keywords-field{
+		width: 350px;
+		height: 38px;
+		top: 40%;
+		left: 225px;
+		font-size: 1em;
+	}
+	.annuaire-professionnel .main-fields .bouton_recherche{
+		height: 42px;
+		width: 120px;
+		left: 33%;
+		top: 65%;
+		font-size:1em;
+	}
+	.annuaire-professionnel .wpbdp-main-links-container .wpbdp-main-links .button{
+		top: 250px;
+		font-size: 1em;
+	}
+	.wpbdp-main-box .box-col input {
+    font-size: 1.1em;
+    padding: 10px 20px;
+	}
+	.address-info{
+		display: flex;
+		margin-bottom:25px;
+	}
+
+	 .wpbdp-listing-excerpt{
+	width: 94vw;
+	height: 370px;
+	}
+		.wpbdp-view-all_listings .wpbdp-field-ville, .wpbdp-view-search .wpbdp-field-ville, .wpbdp-view-show_category .wpbdp-field-ville{
+		position: absolute;
+		left: 25px;
+		top: 20px;
+		display: flex;
+	}
+	.listing-thumbnail img {
+		margin-left: 10px;
+	    top: 25%;
+	}
+	.wpbdp-listings-list .wpbdp-listing-excerpt .listing-details{
+		left: 23px;
+		top: 200px;
+	}
+	.listings .wpbdp-listing .listing-title a{
+		left: 210px;
+		top: 130px;
+	}
+	 .listings .wpbdp-listing .wpbdp-field-domaine_dactivite a{
+		top: -35px;
+		right: -300px;
+	}
+	.view-listing{
+	    top: 320px;
+	    right: 30px;
+	}
+	.wpbdp-view-search .wpbdp-listing a,.wpbdp-view-all_listings .wpbdp-listing a,.wpbdp-view-all_listings .wpbdp-field-nom_du_dirigeant .value,.wpbdp-view-search .wpbdp-field-nom_du_dirigeant .value{
+		margin-left: 25px;
+	}
+	
+	.wpbdp-view-all_listings .wpbdp-field-ville label,	.wpbdp-view-search  .wpbdp-field-ville label,.wpbdp-view-show_category .wpbdp-field-ville label,
+	.wpbdp-view-all_listings .wpbdp-field-domaine_dactivite,.wpbdp-view-search .wpbdp-field-domaine_dactivite,.wpbdp-view-show_category .wpbdp-field-domaine_dactivite,
+	.wpbdp-view-all_listings .wpbdp-field-nom_contact_entreprise,.wpbdp-view-search .wpbdp-field-nom_contact_entreprise,.wpbdp-view-show_category .wpbdp-field-nom_contact_entreprise,
+	.wpbdp-view-all_listings .wpbdp-field-numero_de_telephone_fax,.wpbdp-view-search .wpbdp-field-numero_de_telephone_fax,.wpbdp-view-show_category .wpbdp-field-numero_de_telephone_fax,
+	.wpbdp-view-all_listings .wpbdp-field-numero_de_telephone_portable,.wpbdp-view-search .wpbdp-field-numero_de_telephone_portable,.wpbdp-view-show_category .wpbdp-field-numero_de_telephone_portable,
+	.wpbdp-view-all_listings .wpbdp-field-code_ape,.wpbdp-view-search .wpbdp-field-code_ape,.wpbdp-view-show_category .wpbdp-field-code_ape,
+	.wpbdp-view-all_listings .address-info br,.wpbdp-view-search .address-info br,.wpbdp-view-show_category .address-info br,
+	.wpbdp-view-all_listings .wpbdp-field-domaine_dactivite label,.wpbdp-view-search .wpbdp-field-domaine_dactivite label,.wpbdp-view-show_category .wpbdp-field-domaine_dactivite label,
+	.wpbdp-view-all_listings .edit-listing,.wpbdp-view-search .edit-listing,.wpbdp-view-show_category .edit-listing,
+	.wpbdp-view-all_listings .wpbdp-field-nom_interlocuteur_,.wpbdp-view-search .wpbdp-field-nom_interlocuteur_,.wpbdp-view-show_category .wpbdp-field-nom_interlocuteur_,
+	.wpbdp-view-all_listings .wpbdp-field-adherent_,.wpbdp-view-search .wpbdp-field-adherent_,.wpbdp-view-show_category .wpbdp-field-adherent_,
+.wpbdp-view-all_listings .wpbdp-field-mail_contact_2,.wpbdp-view-search .wpbdp-field-mail_contact_2,.wpbdp-view-show_category .wpbdp-field-mail_contact_2,
+.wpbdp-view-all_listings .wpbdp-field-forme_juridique_,.wpbdp-view-search .wpbdp-field-forme_juridique_,.wpbdp-view-show_category .wpbdp-field-forme_juridique_,
+	.wpbdp-view-all_listings .wpbdp-field-e-mail_entreprise,.wpbdp-view-search .wpbdp-field-e-mail_entreprise,.wpbdp-view-show_category .wpbdp-field-e-mail_entreprise,
+	.wpbdp-view-all_listings .delete-listing,.wpbdp-view-show_category .delete-listing,.wpbdp-view-search .delete-listing{
+	display: none;
+	}
+	.wpbdp-listing-excerpt{
+		height: 470px;
+	}
+	#loginform label,#wp-submit,#user_pass,#user_login{
+		width: 80%;
+	}
+	.back-to-dir{
+	height: 40px;
+	width: 120px;
+	font-size: 0.9em;
+	right: 10px;
+	bottom: -395px;
+	}
+	.wpbdp-listing-contact-form{
+  	width: 90vw;
+  }
+  .wpbdp-field-display{
+  	font-size: 1.2em;
+  }
+ .wpbdp_listing-template-default .wpbdp-listing .listing-title h2{
+    width: 250px;
+    padding: 35px 0;
+    margin: 20px auto;
+    font-size: 1.5em;
+ }
+ .send-message-button{
+		color: #fff;
+		background: #1ea4dc;
+		border: none;
+		padding: 5px;
+	}
+	.wpbdp-listing.wpbdp-listing-single .listing-details{
+	padding-left: 20px;
+	}
+	.wpbdp-listing.wpbdp-listing-single .listing-details div{
+		display: flex;
+	}
+	.listings .listing-thumbnail img{
+		top: 30%;
+	}
+	.listings div:first-child{
+		margin-bottom: 0;
+	}
+	.listings .wpbdp-listing .listing-title a {
+    font-size: 1em;
+    top: 20px;
+    left: 25px;
+	}
+	.wpbdp-listing-single .listing-thumbnail img{
+		display: none;
+	}
+}
+@media only screen and (max-width:360px) {
+	#loginform{
+		padding: 0 2vw;
+	}
+	#wp-submit, #user_pass, #user_login{
+		width: 90%;
+	}
+	.annuaire-professionnel .main-fields .box-col .keywords-field{
+		width: 300px;
+		left: 165px;
+	}
+	.wpbdp-listing.wpbdp-listing-single .listing-details{
+	padding-left: 5px;
+	}
+	.wpbdp-listing.wpbdp-listing-single .listing-details div{
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width:320px) {
+	.logo-img{
+		margin-left:0;
+	}
+	.logo.all_logo{
+		padding: 0;
+	}
+	.annuaire-professionnel .main-fields .box-col .keywords-field {
+    width: 260px;
+    height: 38px;
+    left: 140px;
+    font-size: 0.7em;
+	}
+	.annuaire-professionnel main h1{
+		font-size: 1.4em;
+		padding: 0 10px;
+	}
+	.annuaire-professionnel .main-fields .bouton_recherche {
+    height: 36px;
+    width: 100px;
+    left: 30%;
+    top: 65%;
+    font-size: 0.9em;
+	}
+	
+	.address-info{
+	padding-left: 0px;
+	margin-bottom: 25px;
+	background-position: 0 0;
+	}
+	.wpbdp-field-nom_du_dirigeant{
+		padding-left: 0px;
+		background-position: 0 0;
+	}
+	.wpbdp-field-site_web_de_lentreprise{
+		padding-left: 0px;
+		background-position: 0 0;
+	}
+	.wpbdp-field-numero_de_telephone_de_lentreprise{
+		padding-left: 0px;
+		background-position: 0 4px;
+	}
+	.listings .wpbdp-listing .listing-title a{
+	font-size: 1em;
+	top: 20px;
+	left: 25px;
+	}
+	.wpbdp-listings-list .wpbdp-listing-excerpt .listing-details{
+		top: 220px;
+	}
+	.listings .listing-thumbnail img {
+	    top: 25%;
+	    margin-left: 0;
+	}
+	.wpbdp-view-all_listings .wpbdp-field-ville, .wpbdp-view-search .wpbdp-field-ville, .wpbdp-view-show_category .wpbdp-field-ville{
+		left: 25px;
+		top: 20px;
+	}
+	.wpbdp-view-search .wpbdp-listing a, .wpbdp-view-all_listings .wpbdp-listing a, .wpbdp-view-all_listings .wpbdp-field-nom_du_dirigeant .value, .wpbdp-view-search .wpbdp-field-nom_du_dirigeant .value{
+		margin-left: 25px;
+	}
+	.back-to-dir{
+		bottom: -450px;
+	}
+	.listings .wpbdp-pagination span{
+	padding: 10px 20px;
+	background-color: #1ea4dc;
+	min-width: 100px;
+	}
+	.wpbdp-listing-excerpt{
+		height: 550px;
+	}
+	.view-listing{
+		top: 400px;
+	}
+}
