@@ -52,9 +52,13 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Activ'est écopole Rennes" class="logo-img">
 						</a>
 
-						<div class="logs">
-							<a href="https://activ-est.fr/activest_blank/inscription/" class="log inscription_button">INSCRIPTION</a>
-							<a href="https://activ-est.fr/activest_blank/connexion/" class="log compte">MON COMPTE</a>
+						<div class="logs"<?php if (is_user_logged_in()) : ?> data-on-home<?php else:?> data-off-home<?php endif; ?>>
+                                                    <?php if (is_user_logged_in()) : ?>
+                                                    <a href="https://activ-est.fr/inscription/niveaux-dadhesion" class="log inscription_button">ADHÉSION</a>
+                                                    <?php else : ?>
+                                                    <a href="https://activ-est.fr/activest_blank/inscription/" class="log inscription_button">INSCRIPTION</a>
+                                                    <?php endif;?>
+                                                    <a href="https://activ-est.fr/activest_blank/connexion/" class="log compte">MON COMPTE</a>
 						</div>
 
 						<!-- nav -->

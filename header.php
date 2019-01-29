@@ -50,8 +50,12 @@
 						<a href="<?php echo home_url(); ?>" class="logo-link">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Activ'Est Écopole Rennes Cesson-Sévigné Chantepie Zone Industrielle sud-est" class="logo-img">
 						</a>
-						<div class="logs">
-							<a href="https://activ-est.fr/inscription/" class="log inscription_button">INSCRIPTION</a>
+						<div class="logs"<?php if (is_user_logged_in()) : ?> data-on<?php else:?> data-off<?php endif; ?>>
+							<?php if (is_user_logged_in()) : ?>
+                                                    <a href="https://activ-est.fr/inscription/niveaux-dadhesion" class="log inscription_button">ADHÉSION</a>
+                                                    <?php else : ?>
+                                                    <a href="https://activ-est.fr/activest_blank/inscription/" class="log inscription_button">INSCRIPTION</a>
+                                                    <?php endif;?>
 							<a href="https://activ-est.fr/connexion/" class="log compte">MON COMPTE</a>
 						</div>
 						

@@ -133,7 +133,7 @@ Template Name: inscription
 	$effectif_entreprise=isset($_POST['effectif_entreprise']) ? $_POST['effectif_entreprise'] : NULL;
 	$site_entreprise=isset($_POST['site_entreprise']) ? $_POST['site_entreprise'] : NULL;
         if($effectif_entreprise>10){$cotisation="250€";}else{$cotisation="160€";}
-	$demande_incription="<p>Bonjour,<br><br>Merci d’avoir solliciter votre adhésion à Activ’Est 2018.<br>Pour finaliser votre inscription, merci de bien vouloir envoyer votre règlement de cotisation de ".$cotisation." , soit par chèque à l'ordre de :<br>Activ'Est<br><br>à l'adresse suivante :<br>Association Activ’est<br>7 rue des Charmilles<br>35510 Cesson-Sévigné<br><br>Soit par virement, à l'ordre de :<br>Nom du titulaire du compte : Association Activ'Est<br>Domiciliation : CCM CHANTEPIE<br>IBAN : FR7615589351220123696154095<br>BIC : CMBRFR2BARK<br>intitulé : Adhésion 2018 - \"nom de votre entreprise\"</p><hr>";
+	$demande_incription="<p>Bonjour,<br><br>Merci d’avoir solliciter votre adhésion à Activ’Est.<br>Pour finaliser votre inscription, merci de bien vouloir envoyer votre règlement de cotisation de ".$cotisation." ,<br><br>soit via Paypal : <a href=\"https://activ-est.fr/inscription/niveaux-dadhesion\">cliquez ici</a><br>(<i>pas de compte Paypal obligatoire</i>)<br><br>soit par chèque à l'ordre de :<br>Activ'Est<br><br>à l'adresse suivante :<br>Association Activ’est<br>7 rue des Charmilles<br>35510 Cesson-Sévigné<br><br>soit par virement :<br>Nous contacter par mail</p><hr>";
 	$demande_incription.="<table id=\"envoi_contact\">";
 	$demande_incription.="<tr><td>Nom et prénom du dirigeant : ".$_POST['nom_contact']."</td></tr>\n";
 	$demande_incription.="<tr><td>Civilité du représentant : ".$_POST['civilite_contact']."</td></tr>\n";
