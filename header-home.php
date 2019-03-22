@@ -56,7 +56,7 @@
                                                     <?php if (is_user_logged_in()) : ?>
                                                     <a href="https://activ-est.fr/inscription/niveaux-dadhesion" class="log inscription_button">ADHÉSION</a>
                                                     <?php else : ?>
-                                                    <a href="https://activ-est.fr/activest_blank/inscription/" class="log inscription_button">INSCRIPTION</a>
+                                                    <a href="https://activ-est.fr/activest_blank/inscription/" class="log inscription_button">ADHÉSION</a>
                                                     <?php endif;?>
                                                     <a href="https://activ-est.fr/activest_blank/connexion/" class="log compte">MON COMPTE</a>
 						</div>

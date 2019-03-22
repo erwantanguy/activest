@@ -174,7 +174,9 @@ h2{
 	padding-top: 20px;
 }
 .nav ul li{
-	display:inline-flex;
+	display:inline-block;
+        position: relative;
+        height: 25px;
 }
 .nav ul{
     margin-bottom: 0;
@@ -192,6 +194,26 @@ h2{
 .nav ul li.current-menu-item a{
 	color:#1ea4dc;
 }
+.nav ul li ul{
+    display: none;
+    position:absolute;
+    left: -10px;
+    background: #000;
+    padding-bottom: 20px;
+}
+.nav ul li:hover ul {
+    display:block;
+ }
+.nav li:hover ul li {
+ float:none;
+ position: relative;
+ }
+ .nav li ul li{
+     padding: 10px 10px;
+ }
+ .nav li ul li:first-child{
+     padding-top: 20px;
+ }
 /********SLIDER******/
 .slider_container{
 	width:100%;
@@ -1829,7 +1851,7 @@ a img.aligncenter {
  } 
  @media only screen and (min-width:769px){
      .single-event #col2 > *, single-event #col2 > * > *{
-         //max-width: 100% !important;
+         /*max-width: 100% !important;*/
      }
      .single-event #em-booking{
         display: flex;
