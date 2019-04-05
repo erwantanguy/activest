@@ -325,7 +325,7 @@ form input[type=submit]:hover{
 .wpbdp-view-all_listings,.wpbdp-view-search,.wpbdp-view-show_category{
 	overflow-x: hidden;
 }
-.wpbdp-view-all_listings .wpbdp-field-ville label,.wpbdp-view-search .wpbdp-field-ville label,.wpbdp-view-show_category.wpbdp-field-ville label,
+/*.wpbdp-view-all_listings .wpbdp-field-ville label,.wpbdp-view-search .wpbdp-field-ville label,.wpbdp-view-show_category.wpbdp-field-ville label,*/
 .wpbdp-view-all_listings .wpbdp-field-nom_contact_2,.wpbdp-view-search .wpbdp-field-nom_contact_2,.wpbdp-view-show_category .wpbdp-field-nom_contact_2,
 .wpbdp-view-all_listings .wpbdp-field-nom_contact_entreprise,.wpbdp-view-search .wpbdp-field-nom_contact_entreprise,.wpbdp-view-show_category .wpbdp-field-nom_contact_entreprise,
 .wpbdp-view-all_listings .wpbdp-field-numero_de_telephone_fax,.wpbdp-view-search .wpbdp-field-numero_de_telephone_fax,.wpbdp-view-show_category .wpbdp-field-numero_de_telephone_fax,
@@ -346,9 +346,9 @@ form input[type=submit]:hover{
 	display: none;
 }
 .wpbdp-view-all_listings .wpbdp-field-ville,.wpbdp-view-search .wpbdp-field-ville,.wpbdp-view-show_category .wpbdp-field-ville{
-	position: absolute;
+/*	position: absolute;
 	top: 47px;
-    right: -360px;
+    right: -360px;*/
 }
 .address-info label{
 	padding-left: 25px;
@@ -443,7 +443,7 @@ form input[type=submit]:hover{
 	text-decoration: underline;
 }
 .listings div:first-child{
-	margin-top: 50px;
+/*	margin-top: 50px;*/
 }
  .wpbdp_listing-template-default .wpbdp-listing .listing-title h2{
 	color: #1ea4dc;

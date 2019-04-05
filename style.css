@@ -464,8 +464,8 @@ h2{
     font-size: 1em;
 }
 .listings div:first-child{
-    margin-top: 25px;
-    margin-bottom: 25px;
+/*    margin-top: 25px;
+    margin-bottom: 25px;*/
 }
 .wpbdp-view-all_listings .wpbdp-field-ville, .wpbdp-view-search .wpbdp-field-ville, .wpbdp-view-show_category .wpbdp-field-ville{
     top: 44px;
@@ -1589,7 +1589,51 @@ a img.aligncenter {
 	}
 }
 
+.page-template-page-trail main{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.page-template-page-trail main section{
+    width:40%;
+    margin: 50px 5% 0;
+}
+.page-template-page-trail main section img{
+    max-width: 100%;
+    height:auto;
+}
+.page-template-page-trail main section.left aside, .page-template-page-trail main section.left figure{
+    margin: 30px 0;
+}
+.page-template-page-trail main #partenaires{
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;*/
+}
+.page-template-page-trail main #partenaires figure{
+    margin: 5px;
+}
+.page-template-page-trail main #partenaires img{
+    max-width: 100%;
+    height:auto;
+    width: auto;
+    max-height: 60px;
+}
+@media only screen and (max-width: 768px){
+    .page-template-page-trail main{
+        display: block;
+    }
+    .page-template-page-trail main section{
+        width:100%;
+        margin: 50px 0;
+    }
+    .page-template-page-trail main section.left aside{
+        display: none;
+    }
+}
 .les-evenements main section, .single-event main section{
     text-align: left;
     font-size: 1.5em;
@@ -1875,7 +1919,7 @@ a img.aligncenter {
         line-height: 2em;
         text-transform: uppercase;
     }
-    .page main{
+    .page main, .page figure[role]{
         width: 80%;
         margin: 0 auto;
         padding: 0;
