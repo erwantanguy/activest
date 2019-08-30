@@ -17,6 +17,11 @@ get_header(); ?>
 </figure>
 	<main role="main">
             <section class="left">
+                <aside class="desktop">
+                    <div class="embed-container"><?php //print_r(get_field('lavideo')); ?>
+                            <?php the_field('lavideo'); ?>
+                    </div>
+                </aside>
                 <figure>
                     <?php //the_post_thumbnail(large); ?>
                 <?php //print_r(get_field('image'));
@@ -33,7 +38,10 @@ if( $image ) {
 
 ?>
                 </figure>
-                <aside>
+                <article class="desktop">
+                    <?php the_field('texte2'); ?>
+                </article>
+                <aside class="desktop">
                     <?php the_field('texte'); ?>
                 </aside>
             </section>
@@ -71,6 +79,14 @@ if( $image ) {
 			<!-- /article -->
 
 		<?php endif; ?>
+                <article class="mobile">
+                    <?php the_field('texte2'); ?>
+                </article>
+                <aside class="mobile">
+                    <div class="embed-container"><?php //print_r(get_field('lavideo')); ?>
+                            <?php the_field('lavideo'); ?>
+                    </div>
+                </aside>
 
 		</section>
 		<!-- /section -->
